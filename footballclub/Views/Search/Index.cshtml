@@ -3,41 +3,58 @@
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
 
+@section styles {
+    <link href="@Url.Content("~/css/Photos.css")" rel="stylesheet" type="text/css" />
+}
+
 <div class="container body-content">
     <h1>@ViewBag.title</h1>
     <p>
     <div id="searchcard" class="card blink2 container body-content" style="border-radius: 6px;" >
-
-        <h1>@ViewBag.title</h1>
-
-        <form action="/search/results" method="post">
-                <h2 class ="display-6">What type of activity are you looking for?</h2>
-            <p>
-                <div class="form-check checkboxoptions">
-                    <input type="checkbox" name="type" id="ghost" value="ghost" />
-                    <label for="ghost">Ghosts</label>
-                    <input type="checkbox" name="type" id="alien" value="alien" />
-                    <label for="alien">Aliens</label>
-                    <input type="checkbox" name="type" id="bigfoot" value="bigfoot" />
-                    <label for="bigfoot">Bigfoot</label>
-                </div>
-                <div class="wrap">
-                    <div class="search">
-                        <input type="text" name="searchTerm" id="searchTerm" class="searchTerm" placeholder="Enter search term.." />
-                        <button type="submit" value="Search" class="searchButton">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </div>
-                </div>
-                <br /><br />
-                <input type="submit" name="searchType" id="all" value="Show All!" />
-            </p>
-        </form>
+           
+        
 </div>
 
-<br />
-<br />
-<br />
+
+
+        <div class="row">
+            <div class="column">
+                <img src="~/Images/photospage/ppage1.jpg">
+                <img src="~/Images/caro1.jpg">
+                <img src="~/Images/caro3.jpg">
+                <img src="~/Images/caro2.jpg">
+                <img src="~/Images/caro2.jpg">
+                <img src="~/Images/caro1.jpg">
+                <img src="~/Images/caro3.jpg">
+            </div>
+            <div class="column">
+                <img src="~/Images/photospage/ppage2.jpg">
+                <img src="~/Images/caro1.jpg">
+                <img src="~/Images/caro3.jpg">
+                <img src="~/Images/caro2.jpg">
+                <img src="~/Images/caro2.jpg">
+                <img src="~/Images/caro1.jpg">
+                <img src="~/Images/caro3.jpg">
+            </div>
+            <div class="column">
+                <img src="~/Images/photospage/ppage3.jpg">
+                <img src="~/Images/caro1.jpg">
+                <img src="~/Images/caro3.jpg">
+                <img src="~/Images/caro2.jpg">
+                <img src="~/Images/caro2.jpg">
+                <img src="~/Images/caro1.jpg">
+                <img src="~/Images/caro3.jpg">
+            </div>
+            <div class="column">
+                <img src="~/Images/photospage/ppage4.jpg">
+                <img src="~/Images/caro1.jpg">
+                <img src="~/Images/caro3.jpg">
+                <img src="~/Images/caro2.jpg">
+                <img src="~/Images/caro2.jpg">
+                <img src="~/Images/caro1.jpg">
+                <img src="~/Images/caro3.jpg">
+            </div>
+        </div>
         </br>
         </br>
         </br>
